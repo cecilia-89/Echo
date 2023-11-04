@@ -56,7 +56,7 @@ const reviews = [
         name: 'Atabong Cecilia',
         image: 'albany-capture-Yn0u53lDNMU-unsplash.jpg',
         subject: 'A Remarkable Platform for Connection',
-        description: "EchoConvo is a remarkable platform for video conferencing. It offers crystal clear video and audio quality, intuitive screen sharing, and a user-friendly interface. It's transformed the way I work and connect with friends and family. Highly recommended!",
+        description: "Echo is a remarkable platform for video conferencing. It offers crystal clear video and audio quality, intuitive screen sharing, and a user-friendly interface. It's transformed the way I work and connect with friends and family. Highly recommended!",
 
     },
 
@@ -65,7 +65,7 @@ const reviews = [
         name: 'John Doe',
         image: 'reza-biazar-eSjmZW97cH8-unsplash.jpg',
         subject: 'Exceptional Video Quality and Features',
-        description: "I've been using EchoConvo for a while now, and it never disappoints. The video quality is exceptional, and the screen-sharing feature is top-notch.",
+        description: "I've been using Echo for a while now, and it never disappoints. The video quality is exceptional, and the screen-sharing feature is top-notch.",
 
     },
 
@@ -92,7 +92,7 @@ const reviews = [
         name: 'Alex Smith',
         image: 'mika-ruusunen-W0i1N6FdCWA-unsplash.jpg',
         subject: 'Reliable and Feature-Packed',
-        description: "EchoConvo is not only reliable but feature-packed. I've used it extensively for both business and personal meetings, and it has consistently delivered. It's an indispensable tool for staying connected.",
+        description: "Echo is not only reliable but feature-packed. I've used it extensively for both business and personal meetings, and it has consistently delivered. It's an indispensable tool for staying connected.",
 
     }
 ]
