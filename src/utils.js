@@ -97,8 +97,61 @@ const reviews = [
     }
 ]
 
-const princing = [
-    
+const pricings = [
+    {
+        id: 0,
+        package: 'Echo Free',
+        description: 'Ideal for casual users and small teams, enjoy unlimited 1-on-1 meetings\
+                and 40-minute group meetings with essential features.',
+        price: 'Free',
+        per: '',
+        bannerText: 'All free plans include',
+        Features: [
+            "Unlimited 1-on-1 meetings",
+            '40-minute limit on group meetings',
+            "Basic video conferencing features",
+            "Group meetings limited to 100 participants",
+            "Online support"
+        ],
+        popular: false
+    },
+
+    {
+        id: 1,
+        package: 'Echo Pro',
+        description: 'For businesses and professionals, get unlimited group meetings with no time limits,\
+         advanced user management, reporting, and integrations.',
+        price: '$14.99',
+        per: 'per host per month',
+        bannerText: 'Everything in Pro',
+        Features: [
+            "All features of the Free plan",
+            'No time limit on group meetings',
+            "Unlimited group meetings",
+            "User management and admin controls",
+            "Reporting and analytics",
+            "Integrations with productivity apps"
+        ],
+        popular: true
+    },
+
+    {
+        id: 2,
+        package: 'Echo Business',
+        description: 'Tailored for larger organizations, offering dedicated support, managed domains, single sign-on (SSO), \
+            branding, and custom emails for seamless communication and collaboration.',
+        price: '$19.99',
+        per: 'per host per month (minimum of 10 hosts)',
+        bannerText: 'Everything in Business',
+        Features: [
+            "All features of the Pro plan",
+            'Dedicated phone support',
+            "Managed domains",
+            "Company branding and custom emails",
+            "Advanced user management"
+        ],
+        popular: false
+    }
 ]
 
-export { features, reviews}
+export { features, reviews, pricings }

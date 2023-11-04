@@ -18,7 +18,7 @@
         padding: 20px;
         text-align: center;
         gap: 50px;
-        margin: 40px 120px;
+        margin: 40px 20px;
 
        &>div {
         box-shadow: 3px 3px 9px index.$shade;
@@ -40,6 +40,10 @@
             }
         }
 
+       }
+
+       &>div:nth-child(odd) {
+        background: index.$green;
        }
     }
 }

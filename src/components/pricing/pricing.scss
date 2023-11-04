@@ -1,1 +1,115 @@
 @use '../../index.scss';
+
+section.pricing {
+    margin: 100px 0;
+    padding: 50px 0;
+    border-radius: 100px 0;
+
+    &>div:first-child {
+        text-align: center;
+        max-width: 380px;
+        padding: 40px 0;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p, h1 {
+            margin: 0;
+        }
+    }
+
+    .pricing-list {
+        display: flex;
+        flex: 0 1 0;
+        width: 100%;
+        justify-content: center;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .plan, .popular {
+            border-radius: 10px;
+            flex-grow: unset;
+            padding: 10px;
+            border: 2px solid index.$green;
+            max-width: 350px;
+            background: index.$primary-color;
+
+            h1 {
+                color: index.$green;
+            }
+
+    
+            &>div:first-child {
+                border-bottom: 1px solid index.$shade;
+
+                .plan-package {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    div {
+                        background: index.$black;
+                        border-radius: 25px;
+                        padding: 5px 15px;
+                        color: index.$primary-color;
+                        font-weight: bold;
+                    }
+                }
+    
+                .plan-price {
+                    display: flex;
+                    align-items: center;
+
+                    &>div:first-child {
+                        font-weight: bold;
+                        color: index.$green;
+                        font-size: 2.1em;
+                    }
+
+                    p {
+                        font-size: .85em;
+                        padding-left: 10px;
+                    }
+                }
+            }
+    
+            &>div:nth-child(2) {
+               margin-top: 15px;
+
+               .plan-features {
+
+                    li {
+                        color: index.$green;
+                    }
+
+                    span {
+                        color: index.$black;
+                    }
+               }
+            }
+        }
+
+        .popular {
+            background: index.$green;
+
+            &>div:first-child .plan-price > div:first-child {
+                color: index.$black;
+            }
+
+            &>div:nth-child(2) {
+                color: index.$black;
+
+                .plan-features li {
+                    color: index.$black;
+                }
+            }               
+
+            h1 {
+                color: index.$black;
+            }
+        }
+    }
+}
