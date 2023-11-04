@@ -3,12 +3,16 @@ import './navbar.scss'
 const Navbar = () => {
     return (
         <header>
-           <div className="logo">
-                <img src="echo.png" alt="" />
-           </div>
+           <div>
 
-           <div>Your Resonance in Every Connection</div>
-           <div><button>Sign up</button></div>
+             <div className='logo-wrapper'>
+                  <div><img src="echo.png" alt="" /></div>
+                  <span>Your Resonance in Every Connection</span>
+             </div>
+
+             <div><button>Sign up</button></div>
+
+           </div>
         </header>
       );
 }

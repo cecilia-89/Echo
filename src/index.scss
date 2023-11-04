@@ -1,6 +1,16 @@
-$primary-color: rgb(252, 252, 252);
-$green: #BFFFD6;
+$primary-color: rgb(251, 251, 251);
+$green: #bae8d4;
+$shade: #c5c5c5;
+$black: #232323;
 $neon-green: #82FFC3;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
 
 body {
   background: $primary-color;
@@ -18,7 +28,4 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-* {
-  box-sizing: border-box;
-}
 

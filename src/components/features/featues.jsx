@@ -5,7 +5,11 @@ import { features } from '../../utils'
 const Features = () => {
     return ( 
         <section className="feature">
-            <h1>Our Features</h1>
+        
+            <div>
+                <h1>Our Features: Elevating Your Video Conferencing Experience</h1>
+            </div>
+                
 
             <div className='features'>
                 {features.map(feature => 
