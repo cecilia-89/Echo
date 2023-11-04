@@ -43,6 +43,7 @@ section.pricing {
     
             &>div:first-child {
                 border-bottom: 1px solid index.$shade;
+                color: index.$black;
 
                 .plan-package {
                     display: flex;
@@ -73,6 +74,7 @@ section.pricing {
                         padding-left: 10px;
                     }
                 }
+
             }
     
             &>div:nth-child(2) {
