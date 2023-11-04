@@ -6,8 +6,9 @@ section.pricing {
 
     &>div:first-child {
         text-align: center;
-        max-width: 380px;
-        padding: 40px 0;
+        color: index.$black;
+        max-width: 450px;
+        padding: 40px 15px;
         margin: 0 auto;
 
         h1 {
@@ -114,3 +115,4 @@ section.pricing {
         }
     }
 }
+
