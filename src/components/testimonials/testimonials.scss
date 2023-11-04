@@ -49,7 +49,7 @@
         scrollbar-width: none;
     }
 
-    &>div:nth-child(2)::-webkit-scrollbar {
+    &>div:nth-of-type(2)::-webkit-scrollbar {
         display: none;
     }
 
