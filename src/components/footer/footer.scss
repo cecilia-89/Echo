@@ -23,6 +23,11 @@
     
             li {
                 list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: index.$green;
+                }
     
                 ion-icon {
                     font-size: 1.8em;

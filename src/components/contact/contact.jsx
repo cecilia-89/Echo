@@ -29,7 +29,7 @@ const Contact = () => {
                                 <input type="email" name="" placeholder="Email" id="" />
                             </div>
                             <div className="message"><textarea placeholder='Enter text here' name="" id="" className='text-message'></textarea></div>
-                            <div><button type="submit">Send</button></div>
+                            <div><button onClick={(e) => e.preventDefault()}>Send</button></div>
                         </form>
                     </div>
                 </div>

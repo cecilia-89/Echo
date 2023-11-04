@@ -6,10 +6,26 @@ const Footer = () => {
             <div>
                 <p>Follow us on social media</p>
                 <ul>
-                    <li><ion-icon name="logo-instagram"></ion-icon></li>
-                    <li><ion-icon name="logo-facebook"></ion-icon></li>
-                    <li><ion-icon name="logo-youtube"></ion-icon></li>
-                    <li><ion-icon name="logo-twitter"></ion-icon></li>
+                    <li>
+                        <a href="/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
