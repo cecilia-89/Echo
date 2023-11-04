@@ -1,0 +1,13 @@
+@use '../../index.scss';
+
+.footer {
+    display: flex;
+    
+    div ul {
+        display: flex;
+
+        li {
+            list-style: none;
+        }
+    }
+}

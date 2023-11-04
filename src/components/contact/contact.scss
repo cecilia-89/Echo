@@ -1,0 +1,133 @@
+@use '../../index.scss';
+
+.contact-wrapper {
+    display: flex;
+    padding: 15px 0;
+    background: index.$green;
+    justify-content: center;
+
+    button {
+        background: index.$black;
+        width: 100%;
+        margin-top: 25px;
+        color: index.$primary-color;
+        outline: none;
+        font-size: 1.1em;
+        padding: 10px;
+        border: 2px solid index.$black;
+        border-radius: 10px;
+    }
+
+    button:hover,
+    button:focus {
+        background:#C6E3C7;
+        color: white;
+    }
+
+    p {
+        font-size:1.2em;
+        margin-top: 0;
+        color: index.$black;
+    }
+
+    h1 {
+        font-size:2em;
+        margin: 0;
+        padding-top: .2em;
+        color: index.$black;
+    }
+
+    &>div:first-child {
+        border-radius: 15px;
+        width: 50%;
+
+        div {
+            text-align: center;
+        }
+    }
+
+    form {
+        margin-top: 1em;
+
+        input {
+            border: 2px solid index.$green;
+            height: 3em;
+            padding: 0 20px 0 30px;
+            background: index.$primary-color;
+            outline: none;
+            font-size: 1.1em;
+            margin-top: 1em;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        ion-icon {
+            position: absolute;
+            bottom: 17px;
+            color: black;
+            font-size: 1.2em;
+            left: 8px;
+        }
+
+        &>div:last-child {
+            text-align: center;
+        }
+    }
+    
+    
+    .names > div, .mail {
+        position: relative;
+    }
+    
+    
+    
+    textarea {
+        width: 100%;
+        background: index.$primary-color;
+        height: 10em;
+        font-size: 1.1em !important;
+        outline: index.$green;
+        padding:0 20px 0 20px;
+        border-radius: 10px;
+        border: 2px solid index.$green;
+    }
+    
+    textarea:focus {
+        outline: none;
+    }
+    
+    .text-message {
+        padding:5px 0 0 10px;
+    }
+    
+    .message {
+        margin-top: 1em;
+    }
+
+    
+    .names {
+        display: block;
+        gap: 15px;
+    }
+    
+    .names > div {
+        width: 100%;
+    }
+    
+    
+    @media (min-width: 768px) {
+        .names {
+            display: flex;
+        }
+    
+        .contact-wrapper {
+            margin-top: 0;
+            padding: 3em 0;
+        }
+    }
+
+}
