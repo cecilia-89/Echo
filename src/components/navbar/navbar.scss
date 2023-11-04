@@ -35,3 +35,21 @@ header {
         font-weight: bold;
     }
 }
+
+@media(max-width: 767px) {
+    header {
+        font-size: .7em;
+
+        &>div {
+            padding: 10px;
+        }
+
+        .logo-wrapper > div {
+            max-width: 60px;
+        }
+
+        button {
+            font-size: .8em;
+        }
+    }
+}

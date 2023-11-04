@@ -2,12 +2,37 @@
 
 .footer {
     display: flex;
-    
-    div ul {
-        display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 50px 0;
+    justify-content: space-between;
+    background: index.$black;
+    color: index.$primary-color;
 
-        li {
-            list-style: none;
+    div {
+        color: index.$green;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        ul {
+            display: flex;
+            padding: 0;
+            gap: 10px;
+    
+            li {
+                list-style: none;
+    
+                ion-icon {
+                    font-size: 1.8em;
+                }
+            }
         }
     }
+
+    &>div:last-child {
+        font-size: 1.2em;
+    }
+
 }
