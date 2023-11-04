@@ -20,7 +20,28 @@
         
     }
 
-    &>div:nth-child(2) {
+    ul {
+        list-style: none;
+        display: flex;
+        padding: 0 .2em 0 0;
+        justify-content: flex-end;
+        margin: .2em 0 .2em;
+        gap: 20px;
+        font-size: 2.25em;
+
+        li {
+            transition: 0.30s;
+            transition: all .3s;
+            color: index.$black;
+        }
+
+        li:hover {
+            cursor: pointer;
+            color: index.$green;
+        }
+    }
+
+    &>div:nth-of-type(2) {
         display: flex;
         gap: 15px;
         overflow-x: auto;
@@ -96,6 +117,11 @@
     }
 }
 
+@media (max-width: 767px) {
+    .testimonials ul {
+        display: none;
+    }
+}
 
 @media (max-width: 540px) {
     .testimonials {

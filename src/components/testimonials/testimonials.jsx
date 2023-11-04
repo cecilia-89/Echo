@@ -1,7 +1,23 @@
 import { reviews } from '../../utils';
+import { useRef } from 'react';
 import './testimonials.scss'
 
 const Testimonials = () => {
+
+    const slider = useRef()
+
+   //moves testimonial section forward or backward on laptop view
+    const slide = (el) => {
+        const scrollLength = (window.innerWidth / 290) * 290
+
+        if (el.target.name.includes('forward')) {
+            slider.current.scrollBy({left: scrollLength, behavior: "smooth"})
+
+        } else {
+            slider.current.scrollBy({left: -scrollLength, behavior: "smooth"})
+        }
+    }
+
     return ( 
         <section className="testimonials">
             <div>
@@ -9,7 +25,12 @@ const Testimonials = () => {
                 <p> Take a look at what our valued users have to say about their experiences using Echo. </p>
             </div>
 
-            <div className="reviews">
+            <ul>
+                <li onClick={(el) => slide(el)}><ion-icon name="chevron-back-circle-sharp"></ion-icon></li>
+                <li onClick={(el) => slide(el)}><ion-icon name="chevron-forward-circle-sharp"></ion-icon></li>
+            </ul>   
+
+            <div ref={slider} className="reviews">
                 {reviews.map(review => (
                     <div key={review.id}>
                         <div className='review-wrapper'>
